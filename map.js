@@ -22,8 +22,9 @@ const numStr = ['1', '2', '3', '4', '5', '6'];
 
 const map = function(array, callback) {
   const results = [];
-
+  //For-of-loop that loops through the array passed in as the first argument.
   for (let item of array) {
+    //Each item is passed the callback function, then pushed to the result array. 
     results.push(callback(item));
   }
   return results;

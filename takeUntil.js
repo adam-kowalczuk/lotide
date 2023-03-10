@@ -21,7 +21,7 @@ const takeUntil = function(array, callback) {
   let results = [];
   //Looping through the array passed in as the first argument
   for (const item of array) {
-    //If the value returned by the callback function is true, break the loop.
+    //If the value returned by the callback function is truthy, break the loop.
     if (callback(item)) {
       break;
     }

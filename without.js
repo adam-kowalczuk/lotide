@@ -17,12 +17,12 @@ const assertArraysEqual = function(arr1, arr2) {
 
 const without = function(source, itemsToRemove) {
   let remainingItems = [];
-  for (let i = 0; i < source.length; i++) {
-    if (!itemsToRemove.includes(source[i])) {
-      remainingItems.push(source[i]);
+  for (const item of source) {
+    if (!itemsToRemove.includes(item)) {
+      remainingItems.push(item);
     }
   }
-  return console.log(remainingItems);
+  console.log(remainingItems);
 };
 
 without([1, 2, 3], [3]);

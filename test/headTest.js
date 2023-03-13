@@ -11,5 +11,11 @@ describe("#head", () => {
   it("returns 3 for [3, 2, 4]", () => {
     assert.strictEqual(head([3, 2, 4]), 3); 
   });
+  it("returns 3 for [3, 2, 4]", () => {
+    assert.strictEqual(head([3, 2, 4]), 3); 
+  });
+  it("does not return 4 for [3, 2, 4]", () => {
+    assert.notStrictEqual(head([3, 2, 4]), 4); 
+  });
 
 });

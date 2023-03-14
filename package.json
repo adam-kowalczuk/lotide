@@ -1,10 +1,10 @@
 {
-  "name": "lotide",
+  "name": "@akowalczuk/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A mini clone of the [Lodash](https://lodash.com) library (created for learning purposes only!)",
   "main": "assertArraysEqual.js",
   "directories": {
-    "test": "tests"
+    "test": "test"
   },
   "scripts": {
     "test": "mocha"
@@ -13,7 +13,11 @@
     "type": "git",
     "url": "git+https://github.com/adam-kowalczuk/lotide.git"
   },
-  "author": "",
+  "author": {
+    "name" : "Adam Kowalczuk",
+    "email" : "adam.kowalczuk1@gmail.com",
+    "url" : "https://github.com/adam-kowalczuk"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/adam-kowalczuk/lotide/issues"

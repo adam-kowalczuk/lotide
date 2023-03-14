@@ -14,9 +14,9 @@
     "url": "git+https://github.com/adam-kowalczuk/lotide.git"
   },
   "author": {
-    "name" : "Adam Kowalczuk",
-    "email" : "adam.kowalczuk1@gmail.com",
-    "url" : "https://github.com/adam-kowalczuk"
+    "name": "Adam Kowalczuk",
+    "email": "adam.kowalczuk1@gmail.com",
+    "url": "https://github.com/adam-kowalczuk"
   },
   "license": "ISC",
   "bugs": {

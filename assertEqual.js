@@ -10,7 +10,3 @@ const assertEqual = function(actual, expected) {
 
 module.exports = assertEqual;
 
-//TESTS
-
-// assertEqual("Lighthouse Labs", "Bootcamp");
-// assertEqual(1, 1);

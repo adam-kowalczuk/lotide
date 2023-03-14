@@ -13,3 +13,8 @@ const assertObjectsEqual = function(obj1, obj2) {
 };
 
 module.exports = assertObjectsEqual;
+
+//TESTS
+
+// assertObjectsEqual({a: 1, b: [2, 3]}, {a: 1, b: [2, 3]}); //Passes
+// assertObjectsEqual({a: 1, b: 1}, {a: 1, b: 2}); //Fails

@@ -1,5 +1,5 @@
-const assertArraysEqual = require('./assertArraysEqual');
 //Loops through an array, applying a callback function to each item, and then returns an array with each altered item. 
+
 const map = function(array, callback) {
   const results = [];
   //Loops through the array passed in as the first argument.
@@ -9,6 +9,11 @@ const map = function(array, callback) {
   }
   return results;
 };
+
+module.exports = map;
+
+//TESTS
+const assertArraysEqual = require('./assertArraysEqual');
 
 const words = ["ground", "control", "to", "major", "tom"];
 const numbers = [1, 2, 3, 4, 5, 6];

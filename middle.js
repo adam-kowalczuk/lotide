@@ -1,3 +1,5 @@
+//Returns the middle value(s) of an array.
+
 const middle = function(arr) {
   const middleIndex = Math.floor(arr.length / 2);
   if (arr.length <= 2) {

@@ -1,3 +1,5 @@
+//An assertion test that prints the results of the equality of two arrays versus an expected outcome. 
+
 const eqArrays = require('./eqArrays');
 
 const assertArraysEqual = function(arr1, arr2) {
@@ -12,3 +14,8 @@ const assertArraysEqual = function(arr1, arr2) {
 };
 
 module.exports = assertArraysEqual;
+
+//TESTS
+
+// assertArraysEqual([1, 2, 3], [1, 2, 3]); //Passes
+// assertArraysEqual([1, 2, 3], [3, 2, 1]); //Fails

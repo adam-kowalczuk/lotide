@@ -1,18 +1,4 @@
-const eqArrays = function(arr1, arr2) {
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-
-const assertArraysEqual = function(arr1, arr2) {
-  const isEqual = eqArrays(arr1, arr2);
-  return isEqual
-    ? console.log(`🟢Assertion Passed: ${arr1} === ${arr2}`)
-    : console.log(`🔴Assertion Failed: ${arr1} !== ${arr2}`);
-};
+//A function that returns the index number of each letter in string. 
 
 const letterPositions = function(sentence) {
   const results = {};
@@ -28,9 +14,4 @@ const letterPositions = function(sentence) {
   return results;
 };
 
-console.log(letterPositions('LHL'));
-console.log(letterPositions('hello'));
-console.log(letterPositions("lighthouse in the house"));
-
-assertArraysEqual(letterPositions('hello').e, [1]); // => 🟢Assertion Passed: [1] !== [1]
-assertArraysEqual(letterPositions("lighthouse in the house").i, [1, 12]); // => 🔴Assertion Failed: [1, 11] !== [1, 12]
+module.exports = letterPositions

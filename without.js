@@ -1,19 +1,4 @@
-const eqArrays = function(arr1, arr2) {
-  if (arr1.length !== arr2.length) return false;
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-
-const assertArraysEqual = function(arr1, arr2) {
-  const isEqual = eqArrays(arr1, arr2);
-  return isEqual
-    ? console.log(`🟢Assertion Passed: ${arr1} === ${arr2}`)
-    : console.log(`🔴Assertion Failed: ${arr1} !== ${arr2}`);
-};
+//Removes items from an array, and returns array of remaining items. 
 
 const without = function(source, itemsToRemove) {
   let remainingItems = [];
@@ -25,10 +10,5 @@ const without = function(source, itemsToRemove) {
   console.log(remainingItems);
 };
 
-without([1, 2, 3], [3]);
-without(["1", "2", "3"], ["1", "2", 3]);
-
-const colors = ["red", "orange", "yellow"];
-without(colors, ["yellow", "orange"]);
-assertArraysEqual(colors, ["red", "orange", "yellow"]);
+module.exports = without;
 

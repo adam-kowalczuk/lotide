@@ -6,7 +6,7 @@ const flatten = function(arr) {
     if (Array.isArray(element)) {
       // Loop through the element array,
       for (const subElement of element) {
-        // And push its elements to flattenedArr
+        // And push its subElements to flattenedArr
         flattenedArr.push(subElement);
       }
       // If element is NOT an array, simply push the current element to flattenedArr
@@ -18,3 +18,13 @@ const flatten = function(arr) {
 };
 
 module.exports = flatten;
+
+
+//TESTS
+
+const assertArraysEqual = require('./assertArraysEqual');
+
+const arr1 = [1, 2, [3, 4], 5, [6]];
+console.log(flatten(arr1)); // -> [1, 2, 3, 4, 5, 6]
+
+assertArraysEqual(flatten(arr1), [1, 2, 3, 4, 5, 6]); // Assertion Passed

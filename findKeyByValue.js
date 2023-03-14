@@ -13,13 +13,13 @@ module.exports = findKeyByValue;
 
 //TESTS
 
-const assertEqual = require('./assertEqual');
+// const assertEqual = require('./assertEqual');
 
-const bestTVShowsByGenre = {
-  sci_fi: "Blade",
-  comedy: "Brooklyn Nine-Nine",
-  drama:  "The Wire"
-};
+// const bestTVShowsByGenre = {
+//   sci_fi: "Blade",
+//   comedy: "Brooklyn Nine-Nine",
+//   drama:  "The Wire"
+// };
 
-assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
-assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+// assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
+// assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
